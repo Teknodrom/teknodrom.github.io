@@ -10,3 +10,4 @@ github_username:  teknodrom
 
 # Build settings
 markdown: kramdown
+exclude: [README.md, Gemfile, Gemfile.lock, .gitignore]
