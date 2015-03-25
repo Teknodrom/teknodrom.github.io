@@ -1,0 +1,47 @@
+---
+layout: main
+---
+
+<header>
+  <div class="hero">
+    <div class="wrapper">
+      <!-- <h1 class="page-heading is-logo">Random Encounter</h1>
+
+      <section>
+        <p>Something cryptic and cool about us..</p>
+      </section> -->
+
+    </div>
+  </div>
+</header>
+
+<article class="site-about">
+  <div class="wrapper">
+    <h1 class="page-heading">ABOUT</h1>
+    {% include about.html %}
+  </div>
+</article>
+
+<article class="site-team">
+  <div class="wrapper">
+    <h1 class="page-heading">TEAM</h1>
+  </div>
+</article>
+
+<article class="site-blog">
+  <div class="wrapper">
+    <h1 class="page-heading">BLOG</h1>
+
+    <ul class="post-list">
+      {% for post in site.posts %}
+        <li>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+          <h2>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</article>
