@@ -5,30 +5,6 @@
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:600|Roboto:400,300);
 
-/* @font-face {
-    font-family: yukari;
-    src: url(/assets/fonts/yukarimobil.ttf);
-}
-
-@font-face {
-   font-family: 'Roboto';
-      src: url('/assets/fonts/roboto-2014/Roboto-Thin.ttf');
-   font-weight: 100;
-   font-style: normal;
-}
-
-@font-face {
-   font-family: 'Roboto';
-      src: url('/assets/fonts/roboto-2014/Roboto-Regular.ttf');
-   font-weight: 400;
-   font-style: normal;
-}
-
-@font-face {
-    font-family: bebas-neue;
-    src: url(/assets/fonts/bebas-neue/BebasNeue.otf);
-} */
-
 
 // Our variables
 $base-font-family: 'Roboto', sans-serif;
@@ -38,9 +14,10 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #517087;
+$text-color:         #111;
+$background-color:   #fdfdfd;
+$brand-color:        #517087;
+$complement-color-1: #22A7F0;
 
 $grey-color:       #828282;
 $grey-color-light: #F3F5F8;

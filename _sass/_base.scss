@@ -95,13 +95,17 @@ a {
   color: $brand-color;
   text-decoration: none;
 
+  -webkit-transition: color .2s ease-out;
+  -moz-transition: color .2s ease-out;
+  -o-transition: color .2s ease-out;
+  transition: color .2s ease-out;
+
   &:visited {
     color: darken($brand-color, 15%);
   }
 
   &:hover {
-    color: $text-color;
-    text-decoration: underline;
+    color: $complement-color-1;
   }
 }
 

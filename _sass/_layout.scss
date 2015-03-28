@@ -2,12 +2,15 @@
  * Site header
  */
 .site-header {
-  border-top: 5px solid $brand-color;
-  border-bottom: 1px solid $grey-color-light;
+  //border-top: 5px solid $brand-color;
+  //border-bottom: 1px solid $grey-color-light;
   min-height: 46px;
-
-  // Positioning context for the mobile navigation icon
-  position: relative;
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  background-color: #2F3238;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
 }
 
 .site-title {
@@ -21,7 +24,7 @@
 
   &,
   &:visited {
-    color: $grey-color-dark;
+    color: #fff;
   }
 }
 .site-logo {
@@ -186,6 +189,12 @@ header {
   }
 }
 
+@include media-query($on-palm) {
+  header .hero {
+    height: 400px;
+  }
+}
+
 .site-hero {
   padding: $spacing-unit 0;
   background-color: $brand-color;
@@ -201,12 +210,6 @@ header {
   background-color: $grey-color-light;
   p {
     padding: $spacing-unit 0;
-  }
-}
-
-.team-list {
-  li {
-    display: inline-block;
   }
 }
 
