@@ -140,6 +140,7 @@
  * Page content
  */
 .page-content {
+  border-top: 4px solid $color-blue;
   padding: $spacing-unit 0;
 }
 
@@ -153,7 +154,7 @@ header {
     padding: $spacing-unit 0;
     h1 {
       font-weight: bold;
-      font-size: 40px;
+      font-size: 56px;
     }
   }
 }
@@ -220,6 +221,15 @@ header {
   p {
     color: $grey-color;
   }
+
+  svg {
+    height: 56px;
+    width: 66px;
+    position: absolute;
+    path {
+      fill: #81CFE0;
+    }
+  }
 }
 
 .post-header {
@@ -230,6 +240,9 @@ header {
   }
   a:hover {
     color: $color-blue;
+  }
+  h2 {
+    margin: 0;
   }
 }
 
