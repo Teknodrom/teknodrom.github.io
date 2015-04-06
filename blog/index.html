@@ -4,16 +4,30 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <section class="blog-heading">
+    <h1>In Our Own Write</h1>
+    <p class="small faded">The Official Teknodrom Blog</p>
+  </section>
 
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <section class="post-header">
+          <h2>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
+          <p class="post-meta">
+            {% if post.author %}
+              <span class="post-author">{{ post.author }}</span> wrote this on
+            {% endif %}
+            {{ post.date | date: "%b %-d, %Y" }}{% if post.meta %} • {{ post.meta }}{% endif %}
+          </p>
+        </section>
+
+        <article class="post-content">
+          {{ post.content}}
+        </article>
       </li>
     {% endfor %}
   </ul>

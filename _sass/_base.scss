@@ -82,7 +82,10 @@ li {
 /**
  * Headings
  */
-h1, h2, h3, h4, h5, h6 {
+h1 {
+  font-weight: 900;
+}
+h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
@@ -101,11 +104,11 @@ a {
   transition: color .2s ease-out;
 
   &:visited {
-    color: darken($brand-color, 15%);
+    color: darken($brand-color, 0%);
   }
 
   &:hover {
-    color: $complement-color-1;
+    color: $color-blue;
   }
 }
 
@@ -127,6 +130,14 @@ blockquote {
   }
 }
 
+
+
+/**
+ * Bold
+ */
+strong {
+  font-weight: 400;
+}
 
 
 /**

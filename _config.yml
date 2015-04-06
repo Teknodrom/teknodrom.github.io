@@ -3,11 +3,12 @@ title: teknodrom
 email: hello@teknodrom.cc
 description: > # this means to ignore newlines until "baseurl:"
   Teknodrom is currently working on a secret. Follow us on your favorite social
-  media and keep visiting this site for updates!
+  media and keep visiting our website for updates!
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: teknodrom
 github_username:  teknodrom
+team_members: ["Jesper Andersson", "Christian Grimber", "Oscar Persson"]
 
 # Build settings
 markdown: kramdown
