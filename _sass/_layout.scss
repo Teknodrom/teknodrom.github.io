@@ -1,104 +1,4 @@
 /**
- * Site header
- */
-.site-header {
-  //border-top: 5px solid $brand-color;
-  //border-bottom: 1px solid $grey-color-light;
-  min-height: 46px;
-  position: absolute;
-  z-index: 100;
-  width: 100%;
-  background-color: #2F3238;
-  background-color: rgba(0,0,0,0.5);
-  color: white;
-}
-
-.site-title {
-  font-family: 'Open Sans', sans-serif;
-  text-transform: uppercase;
-  font-size: 20px;
-  line-height: 46px;
-  letter-spacing: -1px;
-  margin-bottom: 0;
-  float: left;
-
-  &,
-  &:visited {
-    color: #fff;
-  }
-}
-.site-logo {
-  float: left;
-  width: 44px;
-  margin-right: 0.125em;
-}
-
-.site-nav {
-  float: right;
-  line-height: 56px;
-
-  .menu-icon {
-    display: none;
-  }
-
-  .page-link {
-    color: $text-color;
-    line-height: $base-line-height;
-
-    // Gaps between nav items, but not on the first one
-    &:not(:first-child) {
-      margin-left: 20px;
-    }
-  }
-
-  @include media-query($on-palm) {
-    position: absolute;
-    top: 9px;
-    right: 30px;
-    background-color: $background-color;
-    border: 1px solid $grey-color-light;
-    border-radius: 5px;
-    text-align: right;
-
-    .menu-icon {
-      display: block;
-      float: right;
-      width: 36px;
-      height: 26px;
-      line-height: 0;
-      padding-top: 10px;
-      text-align: center;
-
-      > svg {
-        width: 18px;
-        height: 15px;
-
-        path {
-          fill: $grey-color-dark;
-        }
-      }
-    }
-
-    .trigger {
-      clear: both;
-      display: none;
-    }
-
-    &:hover .trigger {
-      display: block;
-      padding-bottom: 5px;
-    }
-
-    .page-link {
-      display: block;
-      padding: 5px 10px;
-    }
-  }
-}
-
-
-
-/**
  * Site footer
  */
 .site-footer {
@@ -159,6 +59,9 @@
 }
 
 @include media-query($on-palm) {
+  .site-footer {
+    text-align: center;
+  }
   .footer-col {
     float: none;
     width: -webkit-calc(100% - (#{$spacing-unit} / 2));
@@ -172,33 +75,27 @@
  * Page content
  */
 .page-content {
+  border-top: 4px solid $brand-color;
   padding: $spacing-unit 0;
 }
 
 header {
-  background-color: rgb(0,0,0);
-  background: rgb(0,0,0) url('/assets/images/hero-2195x1200.jpg') no-repeat center center;
-  background-size: cover;
-  position: relative;
-
-  .hero {
-    background-color: rgba(81,112,135,0.6);
-    color: #FFF;
-    height: 600px;
-    text-align: center;
-  }
-}
-
-@include media-query($on-palm) {
-  header .hero {
-    height: 400px;
-  }
-}
-
-.site-hero {
+  background-color: #86E2D5;
+  text-align: center;
   padding: $spacing-unit 0;
-  background-color: $brand-color;
-  color: #FFF;
+
+  .header-title {
+    font-weight: bold;
+    font-size: 66px;
+    margin: 0;
+    @include media-query($on-laptop) {
+      font-size: 42px;
+    }
+  }
+
+  .header-sub-title {
+    font-size: 28px;
+  }
 }
 
 .site-about, .site-team, .site-blog {
@@ -211,6 +108,10 @@ header {
   p {
     padding: $spacing-unit 0;
   }
+}
+
+.site-team {
+  padding-bottom: $spacing-unit;
 }
 
 .page-heading {
@@ -246,8 +147,38 @@ header {
 /**
  * Posts
  */
+.blog-heading {
+  text-align: center;
+  border-bottom: solid 1px $grey-color-light;
+  margin-bottom: $spacing-unit;
+  h1 {
+    font-size: 54px;
+    margin: 0;
+    font-weight: 900;
+  }
+  p {
+    color: $grey-color;
+  }
+
+  svg {
+    height: 56px;
+    width: 66px;
+    position: absolute;
+    path {
+      fill: $color-blue;
+    }
+  }
+}
+
 .post-header {
   margin-bottom: $spacing-unit;
+  text-align: center;
+  a {
+    border: none;
+  }
+  h2 {
+    margin: 0;
+  }
 }
 
 .post-title {
@@ -258,6 +189,10 @@ header {
   @include media-query($on-laptop) {
     font-size: 36px;
   }
+}
+
+.post-author {
+  font-weight: 400;
 }
 
 .post-content {

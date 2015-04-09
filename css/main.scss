@@ -3,7 +3,7 @@
 ---
 @charset "utf-8";
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:600|Roboto:400,300);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:600|Roboto:900,400,300);
 
 
 // Our variables
@@ -15,9 +15,11 @@ $base-line-height: 1.5;
 $spacing-unit:     30px;
 
 $text-color:         #111;
-$background-color:   #fdfdfd;
-$brand-color:        #517087;
+$background-color:   #fff; //#fdfdfd;
+$brand-color:        #03C9A9;
 $complement-color-1: #22A7F0;
+
+$color-blue:       #4183D7;
 
 $grey-color:       #828282;
 $grey-color-light: #F3F5F8;
