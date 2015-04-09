@@ -8,7 +8,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: teknodrom
 github_username:  teknodrom
-team_members: ["Jesper Andersson", "Christian Grimber", "Oscar Persson"]
+team_members: ["Jesper Andersson", "Christian Grimberg", "Oscar Persson"]
 
 # Build settings
 markdown: kramdown

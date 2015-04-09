@@ -95,8 +95,10 @@ h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: $brand-color;
+  color: $text-color;
   text-decoration: none;
+  border-bottom: 0.08em solid rgba(0,0,0,0.1);
+  padding-bottom: .08em;
 
   -webkit-transition: color .2s ease-out;
   -moz-transition: color .2s ease-out;
@@ -104,11 +106,11 @@ a {
   transition: color .2s ease-out;
 
   &:visited {
-    color: darken($brand-color, 0%);
+    color: darken($text-color, 0%);
   }
 
   &:hover {
-    color: $color-blue;
+    color: $brand-color;
   }
 }
 
