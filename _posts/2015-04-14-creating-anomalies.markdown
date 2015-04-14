@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Creating Anomalies"
 date:   2015-04-14 13:03:09
 categories: game design
 author: "Christian"
