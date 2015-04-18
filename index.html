@@ -23,7 +23,9 @@ layout: main
       {% for member in site.team_members %}
       <li>
         <div class="avatar"></div>
-        <p>{{ member.name }}</p>
+        <p>
+          <a href="mailto:{{ member.email }}">{{ member.name }}</a>
+        </p>
         <p class="member-title">{{ member.title }}</p>
       </li>
       {% endfor %}
