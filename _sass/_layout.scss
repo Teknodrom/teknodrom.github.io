@@ -120,15 +120,24 @@ header {
   p {
     margin: 0;
   }
-  
+
   .member-title {
     font-size: $small-font-size;
     color: $grey-color;
   }
-  
+
   @include media-query($on-palm) {
       width: 100%;
     }
+}
+
+.avatar {
+  background-image: url('/assets/images/circle.png');
+  height: 140px;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: $spacing-unit/2 0;
 }
 
 .page-heading {
