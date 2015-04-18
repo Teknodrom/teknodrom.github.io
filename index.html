@@ -18,7 +18,8 @@ layout: main
     <ul class="team-list">
       {% for member in site.team_members %}
       <li>
-        <p>{{ member }}</p>
+        <p>{{ member.name }}</p>
+        <p class="member-title">{{ member.title }}</p>
       </li>
       {% endfor %}
     </ul>

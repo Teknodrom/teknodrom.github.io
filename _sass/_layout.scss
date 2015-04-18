@@ -114,6 +114,23 @@ header {
   padding-bottom: $spacing-unit;
 }
 
+.team-list li {
+  display: inline-block;
+  width: 32%;
+  p {
+    margin: 0;
+  }
+  
+  .member-title {
+    font-size: $small-font-size;
+    color: $grey-color;
+  }
+  
+  @include media-query($on-palm) {
+      width: 100%;
+    }
+}
+
 .page-heading {
   font-size: 20px;
   &.is-logo {
