@@ -14,8 +14,8 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:         #111;
-$background-color:   #fff; //#fdfdfd;
+$text-color:         #2d2d2d;
+$background-color:   #fff;
 $brand-color:        #03C9A9;
 $complement-color-1: #22A7F0;
 
@@ -44,6 +44,21 @@ $on-laptop:        800px;
     @media screen and (max-width: $device) {
         @content;
     }
+}
+
+
+
+// Using retina queries with like this:
+// @include retina-query() {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin retina-query() {
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dppx) {
+    @content;
+  }
 }
 
 

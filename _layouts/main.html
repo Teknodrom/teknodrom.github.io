@@ -11,6 +11,13 @@
 
     {% include footer.html %}
 
+    <script>
+      setTimeout(function() {
+        var pyramid = document.getElementById('pyramid');
+        pyramid.className = pyramid.className + "is-visible";
+      }, 1000);
+    </script>
+
   </body>
 
 </html>

@@ -80,21 +80,66 @@
 }
 
 header {
-  background-color: #86E2D5;
+  position: relative;
+  background-color: $text-color;
+  color: #fff;
   text-align: center;
-  padding: $spacing-unit 0;
+  padding-top: 288 + $spacing-unit;
 
-  .header-title {
-    font-weight: bold;
-    font-size: 66px;
-    margin: 0;
-    @include media-query($on-laptop) {
-      font-size: 42px;
+  @include media-query(400px) {
+    padding-top: percentage(318/400);
+  }
+
+  #pyramid, #logo {
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  #pyramid {
+    position: absolute;
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    opacity: 0;
+    top: -$spacing-unit/2;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('/assets/images/symbol_400.png');
+    background-position: center top;
+    @include retina-query() {
+      background-image: url('/assets/images/symbol_800.png');
+    }
+
+    -webkit-transition: all .8s cubic-bezier(0.545, 0.055, 0.160, 1); /* older webkit */
+    -webkit-transition: all .8s cubic-bezier(0.545, 0.055, 0.160, 1.650);
+    -moz-transition: all .8s cubic-bezier(0.545, 0.055, 0.160, 1.650);
+    -o-transition: all .8s cubic-bezier(0.545, 0.055, 0.160, 1.650);
+    transition: all .8s cubic-bezier(0.545, 0.055, 0.160, 1.650); /* custom */
+
+    &.is-visible {
+      top: $spacing-unit;
+      opacity: 1;
     }
   }
 
-  .header-sub-title {
-    font-size: 28px;
+  #logo {
+    max-width: 400px;
+    height: 73px;
+    margin: 0 auto;
+    background-image: url('/assets/images/logo_400.png');
+    background-position: center;
+    @include retina-query() {
+      background-image: url('/assets/images/logo_800.png');
+    }
+  }
+
+  p {
+    font-size: 22px;
+    @include media-query(400px) {
+      font-size: 18px;
+    }
   }
 }
 
