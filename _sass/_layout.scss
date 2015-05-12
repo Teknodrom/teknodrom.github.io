@@ -84,10 +84,10 @@ header {
   background-color: $text-color;
   color: #fff;
   text-align: center;
-  padding-top: 288 + $spacing-unit;
+  padding-top: 216 + $spacing-unit;
 
-  @include media-query(400px) {
-    padding-top: percentage(318/400);
+  @include media-query(300px) {
+    padding-top: percentage(246/300);
   }
 
   #pyramid, #logo {
@@ -98,7 +98,7 @@ header {
   #pyramid {
     position: absolute;
     width: 100%;
-    max-width: 400px;
+    max-width: 300px;
     height: 100%;
     opacity: 0;
     top: -$spacing-unit/2;
@@ -137,8 +137,14 @@ header {
 
   p {
     font-size: 22px;
-    @include media-query(400px) {
+    span {
+      display: block;
+    }
+    @include media-query($on-palm) {
       font-size: 18px;
+      span {
+        display: inline;
+      }
     }
   }
 }
