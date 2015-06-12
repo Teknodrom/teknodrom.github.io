@@ -84,12 +84,7 @@ header {
   background-color: #4f4f4f;
   color: #fff;
   text-align: center;
-  padding-top: 216 + $spacing-unit;
   padding-bottom: $spacing-unit;
-
-  @include media-query(300px) {
-    padding-top: percentage(246/300);
-  }
 
   #pyramid, #logo {
     background-size: 100%;
@@ -97,20 +92,25 @@ header {
   }
 
   #pyramid {
-    position: absolute;
+    position: relative;
     width: 100%;
+    padding-bottom: 0.8033333333 * 300px;
     max-width: 300px;
-    height: 100%;
     opacity: 0;
     top: -$spacing-unit/2;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    background-image: url('/assets/images/symbol_400.png');
+    margin-bottom: $spacing-unit*2;
+    background-image: url('/assets/images/pyramid.png');
     background-position: center top;
     @include retina-query() {
-      background-image: url('/assets/images/symbol_800.png');
+      background-image: url('/assets/images/pyramid@2x.png');
+    }
+
+    @include media-query(300px) {
+      padding-bottom: 80.33333333%;
     }
 
     -webkit-transition: all .8s cubic-bezier(0.545, 0.055, 0.160, 1); /* older webkit */
@@ -126,13 +126,13 @@ header {
   }
 
   #logo {
-    max-width: 400px;
+    max-width: 300px;
     height: 73px;
     margin: 0 auto;
-    background-image: url('/assets/images/logo_400.png');
+    background-image: url('/assets/images/tekno-logo.png');
     background-position: center;
     @include retina-query() {
-      background-image: url('/assets/images/logo_800.png');
+      background-image: url('/assets/images/tekno-logo@2x.png');
     }
   }
 
