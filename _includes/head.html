@@ -15,6 +15,12 @@
   <link rel="apple-touch-icon" sizes="120x120" href="/assets/images/teknodrom-icon-iphone-retina.png">
   <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/teknodrom-icon-ipad-retina.png">
 
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@{{ site.twitter_username }}" />
+  <meta name="twitter:title" content="{{ site.title }}" />
+  <meta name="twitter:description" content="{{ site.description }}" />
+  <meta name="twitter:image" content="/assets/images/teknodrom-icon.png" />
+
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
